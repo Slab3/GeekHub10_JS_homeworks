@@ -3,7 +3,6 @@ p, h1, h2, h3, h4, ul, body, button {
     padding: 0;
 }
 
-li {list-style: none}
 
 * {
     padding: 0;
@@ -35,9 +34,7 @@ li {list-style: none}
 
 /* ===== HEADER ===== */
 
-.bg-grey {
-    background-color: grey;
-}
+.bg-grey {background-color: grey;}
 
 .logo {
     width: 15%;
@@ -75,19 +72,95 @@ a {
 } a:hover {color: lightblue}
 
 /* ===== main styles ===== */
-
+/* nav */
 .nav {
-    width: 20%;
-    color: white;
-    padding-left: 10px;
+    /*width: 20%;*/
+    min-width: 150px;
+    max-height: 420px;
 }
 
-.nav-h2 {}
+.nav-h2, .item-nav {color: white; padding-left: 10px}
 
 .item-nav {
-    padding: 5px 0 5px 0;
+    padding: 5px 0 5px 10px;
     text-decoration: none;
 }
 .item-nav:hover {
     color: lightblue;
+}
+
+/* ========== nav bottom ========== ============================================= need to work with this more*/
+.nav-bottom {
+    margin: 100% 0 10px;
+    width: 100%;
+    height: 130px;
+    /*position: relative;*/
+
+}
+
+
+/* ========== content ========== */
+.content {
+    width: 100%;
+    margin-left: 20px;
+}
+
+.content-info {
+    width: 100%;
+    color: #535353;
+}
+
+.bg-lightgrey {background-color: lightgrey;}
+
+.cont-h2 {padding: 15px 0 0 15px;}
+.p-cont {padding: 0 0 10px 15px;}
+
+ul {padding: 20px 5px 20px 60px;}
+
+/* === empty boxes === */
+
+.empty-boxes-cont {}
+
+.box-item {
+    display: inline-block;
+    min-width: 160px;
+    height: 160px;
+    background-color: lightgrey;
+    margin: 20px 20px 0 0;
+
+}
+
+/* ===== info bottom ===== */
+
+.info-item-bottom {
+    margin: 20px 20px 0 0;
+    width: 50%;
+    color: #535353;
+    padding: 15px 5px 15px 15px;
+} .info-item-bottom:last-child {margin-right: 0}
+
+
+/* =============== FOOTER =============== */
+
+.items-footer-1 {list-style: none;}
+
+
+.cont-foot-1, .cont-foot-2, .block-2-elem {
+    color: white;
+    width: 100%;
+}
+
+.cont-foot-2, .block-2-elem {
+    margin-left: 25px;
+}
+
+.block-2-elem {
+
+}
+.cont-foot-3 {
+    height: 44%;
+}
+
+.a-style-none {
+    text-decoration: none;
 }
