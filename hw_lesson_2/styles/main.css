@@ -85,16 +85,13 @@ a {
     padding: 5px 0 5px 10px;
     text-decoration: none;
 }
-.item-nav:hover {
-    color: lightblue;
-}
 
-/* ========== nav bottom ========== ============================================= need to work with this more*/
+
+/* ========== nav bottom ========== */
 .nav-bottom {
     margin: 100% 0 10px;
     width: 100%;
     height: 130px;
-    /*position: relative;*/
 
 }
 
