@@ -1,15 +1,14 @@
 console.log('Task 1: ');
 
-let arr = [1, 7, 3, -5, NaN, 4, undefined, -12, 77];
+let arr = [1, 7, 3, 'ag7sd', -5, NaN, 4, undefined, -12, 77, 'agd'];
 
-// === === === === === max === === === === === методом:
-// в случае когда у нас в масиве есть элеметы которые не являются числами, метод не может
-// определить max/min.
+// === === === === === max === === === === === method:
+// in the case when the array contains elements that are not a number, the method cannot determine max / min.
 
 // let max_meth = Math.max(...arr);
-// console.log('max методом: ' + max_meth);
+// console.log('max with method: ' + max_meth);
 
-// === === === max циклом:
+// === === === max cycle:
 
 let max = getMaxOfArray(arr);
 
@@ -26,12 +25,12 @@ function getMaxOfArray(arr){
 console.log('max value: ' + max);
 
 
-// === === === === === min === === === === === методом:
+// === === === === === min === === === === === method:
 
 // let min_meth = Math.min(...arr);
-// console.log('min методом: ' + min_meth);
+// console.log('min with method: ' + min_meth);
 
-// === === === min циклом:
+// === === === min cycle:
 
 let min = getMinOfArray(arr);
 
@@ -49,9 +48,12 @@ console.log('min value: ' + min);
 
 // === === === === === sum === === === === ===
 
+
 let result = 0;
 
 for (let i = 0; i < arr.length; i++) {
-    result += arr[i];
+    if (typeof arr[i] == "number") {
+        result += arr[i];
+    }
 }
 console.log('sum: ' + result);
