@@ -19,7 +19,7 @@ p, h1, h2, h3, h4, ul, body, button {
 .mx-auto {margin: 0 auto;}
 
 .container {
-    max-width: 85%;
+    width: 85%;
     margin: 0 auto;
     padding: 20px 0;
 }
@@ -70,10 +70,18 @@ a {
     display: block;
 } a:hover {color: lightblue}
 
+/* media HEADER */
+
+@media only screen and (max-width: 640px) {
+    .container {
+        width: 100%;
+    }
+}
+
 /* ===== MAIN page styles ===== */
 
 .bg-lightgrey {background-color: lightgrey;}
-ul {padding: 20px 5px 20px 25px;}
+ul {padding: 20px 5px 20px 20px;}
 
 /*=====    LEFT    =====*/
 
@@ -112,8 +120,8 @@ ul {padding: 20px 5px 20px 25px;}
     flex-wrap: wrap;
 }
 .empty-boxes-cont div {
-    width: 160px;
-    height: 160px;
+    width: 150px;
+    height: 150px;
     margin: 15px 15px 15px 0;
 }
 .box-item {background-color: lightgrey;}
@@ -124,6 +132,28 @@ ul {padding: 20px 5px 20px 25px;}
     padding: 20px 10px 20px 20px;
 }
 .left-inf-btm {margin-right: 10px;}
+
+/*media CENTER*/
+
+@media only screen and (max-width: 640px) {
+
+    .content-info, .info-item-bottom {
+        width: 75%;
+        padding-left: 15px;
+        margin-right: 0;
+    }
+    .info-item-bottom:last-child {margin-top: 5px;}
+    p {padding-right: 10px;}
+    .center {
+        margin-left: 5px;
+    }
+    .content-info-btm {
+        display: block;
+        flex-wrap: wrap;
+    }
+
+}
+
 
 /* =============== FOOTER =============== */
 
@@ -153,4 +183,17 @@ ul {padding: 20px 5px 20px 25px;}
 
 .a-style-none {
     text-decoration: none;
+}
+
+/*media FOOTER*/
+
+@media only screen and (max-width: 660px) {
+
+    .footer-cont {
+        display: block;
+        max-width: 130px;
+        flex-wrap: wrap;
+    }
+
+    ul {padding-bottom: 0; padding-top: 3px; padding-left: 5px}
 }
