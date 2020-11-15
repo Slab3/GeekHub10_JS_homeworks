@@ -140,11 +140,16 @@ ul {padding: 20px 5px 20px 25px;}
 }
 
 .block-2-elem {
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .cont-foot-3 {
-    height: 44%;
-}
+    height: 50%;
+    min-width: 100px;
+    width: 100%;
+} .cont-foot-3:last-child {margin-top: 20px;}
+
 
 .a-style-none {
     text-decoration: none;
