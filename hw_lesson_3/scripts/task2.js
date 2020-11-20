@@ -43,8 +43,7 @@ function Loop(time = 1){ /*how much "%" health-bar will lose per 1 tick*/
     document.getElementById('social').style.width = social + 'px';
     document.getElementById('love').style.width = love + 'px';
 
-
-    /* control the "%" of satisfaction */
+    /* control the "%" of bars */
     document.getElementById('hunger').innerHTML = hunger + '%';
     document.getElementById('hygiene').innerHTML = hygiene + '%';
     document.getElementById('energy').innerHTML = energy + '%';
