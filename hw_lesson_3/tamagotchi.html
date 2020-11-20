@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tamagotchi</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="blockImage">
+        <img src="img/blue.jpg" class="pet" id="pet" alt="image">
+    </div>
+
+    <div class="status-n-buttons flex-elem">
+        <div class="side container">
+            <h2>Status: </h2>
+            Hunger:<div id="hunger" class="bar hunger-bar"> 100%</div>
+            Hygiene:<div id="hygiene" class="bar hygiene-bar"> 100%</div>
+            Energy:<div id="energy" class="bar energy-bar"> 100%</div>
+            Pleasure:<div id="pleasure" class="bar pleasure-bar"> 100%</div>
+            Social:<div id="social" class="bar social-bar"> 100%</div>
+            Love:<div id="love" class="bar love-bar"> 100%</div>
+        </div>
+        <div class="blockButton">
+            <div class="block-functions hunger-bl">
+                <button class="button-func hunger-btn" onclick="Eat()">Eat</button>
+                <button class="button-func hunger-btn adds-social-too" onclick="Eat(); Talk()">
+                    <b>Go to McDonald's</b></button>
+                <!-- "McDonald's" adds "social" too, not only Eat -->
+            </div>
+
+            <div class="block-functions hygiene-bl">
+                <button class="button-func hygiene-btn" onclick="Shower()">Take a shower</button>
+                <button class="button-func hygiene-btn adds-social-too" onclick="Shower(); Talk()">
+                    <b>Go to the lake</b></button>
+                <!-- "Go to the lake" adds "social" too -->
+            </div>
+
+            <div class="block-functions energy-bl">
+                <button class="button-func energy-btn" onclick="To_sleep()">Go to sleep</button>
+            </div>
+
+            <div class="block-functions pleasure-bl">
+                <button class="button-func pleasure-btn" onclick="Play()">Play</button>
+                <button class="button-func pleasure-btn adds-social-too" onclick="Play(); Talk()">
+                    <b>Go on a roller coaster</b></button>
+                <!-- "Roller Coaster" adds "social" too -->
+            </div>
+
+            <div class="block-functions social-bl">
+                <button class="button-func social-btn" onclick="Talk()">Talk</button>
+                <button class="button-func social-btn" onclick="Talk()">Call someone on the phone</button>
+            </div>
+            <div class="block-functions love-bl">
+                <button class="button-func love-btn" onclick="Love()">Hug</button>
+            </div>
+        </div>
+    </div>
+    <h3><div class="message" id="message"></div></h3>
+</div>
+
+<script src="scripts/task2.js"></script>
+</body>
+</html>

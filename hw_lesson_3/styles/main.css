@@ -1,0 +1,85 @@
+.container {
+    margin: 0 auto;
+    width: 70%;
+}
+.flex-elem {display: flex;}
+
+/*block with image*/
+.blockImage {
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+/*image with pet*/
+.pet{
+    border-radius: 15px;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    text-align: center;
+}
+/*===== BARS & BUTTONS -block =====*/
+.status-n-buttons {
+    margin: 0 auto;
+    max-width: 450px;
+}
+/*bars*/
+.side{
+    margin: 0 auto;
+    padding: 10px 25px;
+    width: 125px;
+}
+.bar{
+    width: 100px;
+    margin: 5px 10px;
+    border-radius:5px;
+    padding: 3px;
+}
+
+/*buttons*/
+.blockButton{
+    padding: 0;
+    margin: 0 auto;
+}
+.block-functions {
+    margin: 25px 0 0 0;
+}
+.button-func{
+    padding: 6px 10px;
+    margin: 2px 0;
+    color: black;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 200px;
+    display: block;
+}
+.button-func:hover{
+    background: #404040;
+}
+
+/*=============== colors to all BUTTONS ===============*/
+.hunger-btn {background: #ff9a93;}
+.hygiene-btn {background: #74d0cf;}
+.energy-btn {background: #88d77e;}
+.pleasure-btn {background: #b28bee;}
+.social-btn {background: #ffff00;}
+.love-btn {background: #d81725;}
+/*---*/
+.adds-social-too {
+    color: #ffff00;
+}
+
+/*=============== colors to all BARS ===============*/
+.hunger-bar {background: #ff9a93;}
+.hygiene-bar {background: #74d0cf;}
+.energy-bar {background: #88d77e;}
+.pleasure-bar {background: #b28bee;}
+.social-bar {background: #ffff00;}
+.love-bar {background: #d81725;}
+
+/*message*/
+.message {
+    text-align: center;
+    color: red;
+}
+
