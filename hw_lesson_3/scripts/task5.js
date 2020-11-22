@@ -1,13 +1,29 @@
-console.log('Task 5');
+console.log('Task 5...');
 
-// myForEach
+// ========== myForEach ==========
 
-// myMap
+// ========== myMap ==========
+Array.prototype.myMap = function (callback, thisArg = this) {
+    let newArr = [];
 
-// mySort
+    for (let i = 0; i < this.length; i++) {
+        newArr.push(callback.call(null, this[i], i, this));
+    }
 
-// myFilter
+    return newArr;
+};
 
+function myMapFunc(array) {
+    return array.myMap(function (argument) {
+        return argument + "'s";
+    })
+}
+console.log(myMapFunc(['mom', 'dad', 'master', 'none']));
+
+// ========== mySort ==========
+
+
+// ========== myFilter ==========
 Array.prototype.myFilter = function (callback, thisArg = this) {
     let newArr = [];
 
@@ -16,11 +32,17 @@ Array.prototype.myFilter = function (callback, thisArg = this) {
     }
 
     return newArr;
+};
+
+function myFilterFunc(array) {
+    return array.myFilter(function (argument) {
+        return argument === 7;
+    })
 }
+console.log(myFilterFunc([2, 4, 7, 1, NaN, -7, 'sfd', 3, 7]));
 
 
-// myFind
-
+// ========== myFind =========
 Array.prototype.myFind = function (callback, thisArg = this) {
     for (let i = 0; i < this.length; i++) {
         if (callback.call(null, this[i], i, this) === true) {
@@ -28,3 +50,10 @@ Array.prototype.myFind = function (callback, thisArg = this) {
         }
     }
 };
+
+function myFindFunc(array) {
+    return array.myFind(function (argument) {
+        return argument === 7;
+    })
+}
+console.log(myFindFunc([2, 4, 7, 1, NaN, -7, 'sfd', 3, 7]));
