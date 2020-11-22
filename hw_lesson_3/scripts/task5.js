@@ -7,14 +7,12 @@ Array.prototype.myForEach = function (callback, thisArg = this) {
         callback(this[i])
     }
 };
-
 function myForEachFunc(array) {
     array.myForEach(function (argument) {
         console.log(argument);
     })
 }
 myForEachFunc([2, 7, 1, NaN, -7, 'sfd', 3, 7]);
-// console.log(myForEachFunc([2, 7, 1, NaN, -7, 'sfd', 3, 7]));
 
 
 // ========== myMap ==========
