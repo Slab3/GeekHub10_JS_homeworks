@@ -6,13 +6,13 @@ class Calculate {
         this.value = num;
     }
 
-    add(numNext)  {
-        this.value += numNext;
+    add(numValue)  {
+        this.value += numValue;
         return this;
     }
 
-    multiply(numNext){
-        this.value *= numNext;
+    multiply(numValue){
+        this.value *= numValue;
         return this;
     }
 
