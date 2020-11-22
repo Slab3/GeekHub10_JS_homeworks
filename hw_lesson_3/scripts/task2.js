@@ -69,7 +69,7 @@ function Loop(time = 1){ /*how much "%" health-bar will lose per 1 tick*/
 
 /* starts LOOPing timer */
 function Start(){
-    setInterval(Loop, 50);
+    setInterval(Loop, 1000);
 }
 
 /* reset hunger */
