@@ -25,38 +25,38 @@
             Social:<div id="social" class="bar social-bar"> 100%</div>
             Love:<div id="love" class="bar love-bar"> 100%</div>
         </div>
-        <div class="blockButton">
+        <div class="blockButton" id="blockButton">
             <div class="block-functions hunger-bl">
-                <button class="button-func hunger-btn" onclick="Eat()">Eat</button>
-                <button class="button-func hunger-btn adds-social-too" onclick="Eat(); Talk()">
+                <button id="btn-ev-1" class="button-func hunger-btn" onclick="Eat()">Eat</button>
+                <button id="btn-ev-2" class="button-func hunger-btn adds-social-too" onclick="Eat(); Talk()">
                     <b>Go to McDonald's</b></button>
                 <!-- "McDonald's" adds "social" too, not only Eat -->
             </div>
 
             <div class="block-functions hygiene-bl">
-                <button class="button-func hygiene-btn" onclick="Shower()">Take a shower</button>
-                <button class="button-func hygiene-btn adds-social-too" onclick="Shower(); Talk()">
+                <button id="btn-ev-3"class="button-func hygiene-btn" onclick="Shower()">Take a shower</button>
+                <button id="btn-ev-4"class="button-func hygiene-btn adds-social-too" onclick="Shower(); Talk()">
                     <b>Go to the lake</b></button>
                 <!-- "Go to the lake" adds "social" too -->
             </div>
 
             <div class="block-functions energy-bl">
-                <button class="button-func energy-btn" onclick="To_sleep()">Go to sleep</button>
+                <button id="btn-ev-5"class="button-func energy-btn" onclick="To_sleep()">Go to sleep</button>
             </div>
 
             <div class="block-functions pleasure-bl">
-                <button class="button-func pleasure-btn" onclick="Play()">Play</button>
-                <button class="button-func pleasure-btn adds-social-too" onclick="Play(); Talk()">
+                <button id="btn-ev-6"class="button-func pleasure-btn" onclick="Play()">Play</button>
+                <button id="btn-ev-7"class="button-func pleasure-btn adds-social-too" onclick="Play(); Talk()">
                     <b>Go on a roller coaster</b></button>
                 <!-- "Roller Coaster" adds "social" too -->
             </div>
 
             <div class="block-functions social-bl">
-                <button class="button-func social-btn" onclick="Talk()">Talk</button>
-                <button class="button-func social-btn" onclick="Talk()">Call someone on the phone</button>
+                <button id="btn-ev-8"class="button-func social-btn" onclick="Talk()">Talk</button>
+                <button id="btn-ev-9"class="button-func social-btn" onclick="Talk()">Call someone on the phone</button>
             </div>
             <div class="block-functions love-bl">
-                <button class="button-func love-btn" onclick="Love()">Hug</button>
+                <button id="btn-ev-10"class="button-func love-btn" onclick="Love()">Hug</button>
             </div>
         </div>
     </div>

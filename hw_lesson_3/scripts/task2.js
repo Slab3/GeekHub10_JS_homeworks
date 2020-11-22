@@ -13,9 +13,24 @@ function Loop(time = 1){ /*how much "%" health-bar will lose per 1 tick*/
 
     /* If any of the attributes reaches 0, our pet "dies". */
     if(hunger <= 0 || hygiene <= 0 || energy <= 0 || pleasure <= 0 || social <= 0 || love <=0){
+
         document.getElementById('pet').src="img/black.jpg";
         document.getElementById('message').innerHTML = 'You let your pet die, buy new one.' +
             '<br>' + '(...or just refresh the page :D)';
+        // disabling buttons
+        document.getElementById("btn-ev-1").disabled = true;
+        document.getElementById("btn-ev-2").disabled = true;
+        document.getElementById("btn-ev-3").disabled = true;
+        document.getElementById("btn-ev-4").disabled = true;
+        document.getElementById("btn-ev-5").disabled = true;
+        document.getElementById("btn-ev-6").disabled = true;
+        document.getElementById("btn-ev-7").disabled = true;
+        document.getElementById("btn-ev-8").disabled = true;
+        document.getElementById("btn-ev-9").disabled = true;
+        document.getElementById("btn-ev-10").disabled = true;
+        /*disabling looping timer*/
+        document.getElementsByClassName("bar").clearInterval(Start);
+
     } else if(total > 480){  /*if sum is less than the specified number, the pet's picture changes*/
         document.getElementById('pet').src="img/blue.jpg";
     } else if(total > 370){
@@ -54,7 +69,7 @@ function Loop(time = 1){ /*how much "%" health-bar will lose per 1 tick*/
 
 /* starts LOOPing timer */
 function Start(){
-    setInterval(Loop, 1000);
+    setInterval(Loop, 50);
 }
 
 /* reset hunger */
