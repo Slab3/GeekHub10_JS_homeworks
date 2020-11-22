@@ -1,4 +1,5 @@
 // calculate(3).add(2).multiply(2).result() // 10
+
 console.log('Task 4');
 
 class Calculate {
