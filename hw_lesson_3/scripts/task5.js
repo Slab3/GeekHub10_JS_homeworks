@@ -37,10 +37,22 @@ console.log(myMapFunc(['mom', 'dad', 'master', 'none']));
 // ========== mySort ==========
 console.log('mySort');
 
-// Array.prototype.mySort = function (callback, thisArg = this) {
-//
-// };
+Array.prototype.mySort = function(callback, thisArg = this) {
 
+    for(let i = 0; i < this.length; i++) {
+
+        for(let j = i + 1; j < this.length; j++) {
+            if(this[i] > this[j]) {
+                callback = this[i];
+                this[i] = this[j];
+                this[j] = callback;
+            }
+        }
+    }
+    return this;
+};
+
+console.log([2, 7, 1, -7, 3, 7].mySort());
 
 // ========== myFilter ==========
 console.log('myFilter');
