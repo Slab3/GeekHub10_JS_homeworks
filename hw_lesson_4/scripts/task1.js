@@ -1,3 +1,15 @@
+// const init = function(){
+//     let items = document.querySelectorAll('img');
+//     for (let i = 0; i < items.length; i++){
+//         items[i].style.background = '#'+Math.floor(Math.random()*16777215).toString(16).padStart(6, '0');
+//     }
+//
+// };
+// init();
+
+
+
+//it's workiinggggggggg -=---------------====================---------------------=======-=========-=-=-=-
 /* set indexSlide */
 let slideIndex = 1;
 showSlides(slideIndex);
@@ -29,7 +41,7 @@ function showSlides(n) {
         slideIndex = slides.length
     }
 
-    /* Проходим по каждому слайду в цикле for */
+    /* We go through each slide in a loop to */
     for (let slide of slides) {
         slide.style.display = "none";
     }
