@@ -31,9 +31,9 @@
 // setInterval(changInpLog,3000);
 
 //=--------------------------------------------------------------------------------------------------------=
+// debounce
 
-// debounce (this one from lesson)
-
+//
 let timeout = null;
 
 let input = document.createElement('input');
