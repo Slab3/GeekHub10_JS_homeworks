@@ -17,6 +17,7 @@ console.log(isPrime(1));
 console.log(isPrime(17));
 console.log(isPrime(10000000000000));
 
+
 //
 // 2. factorial
 console.log('2. factorial');
@@ -31,12 +32,12 @@ function factorial(num) {
 
 console.log(factorial(5));
 
+
 //
 // 3. fib
 console.log('3. fibonacci');
 
 function fib(num) {
-
     if (num < 1) return 0;
 
     let a = 1;
@@ -95,3 +96,51 @@ console.log(reverse('abcdef'));
 //
 // 6. indexOf
 console.log('6. indexOf');
+
+function indexOf (array, num) {
+    let index;
+    for (let i = 0; i < array.length; i++) {
+        if (num === array[i]) {
+            index = i;
+            break;
+        } else index = -1;
+    }
+    return index;
+}
+
+console.log(indexOf([1, 2, 3], 1));
+console.log(indexOf([1, 2, 3], 4));
+console.log(indexOf([1, 2, 12], 12));
+console.log(indexOf([1, 2, 6, 7, 25, 12, 12], 12));
+
+
+//
+// 7. isPalindrome
+console.log('7. isPalindrome');
+
+
+//
+// 8. missing
+console.log('8. missing');
+
+function missing(arr) {
+    arr.sort();
+    if (arr.length > 0) {
+        let sum = arr.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+        let length = arr.length + 1;
+        let missed = length * ++length/2 - sum;
+        if (arr[arr.length-1] < missed) return undefined;
+        return missed;
+    }
+}
+
+console.log(missing([]));
+console.log(missing([1, 4, 3]));
+console.log(missing([2, 3, 4]));
+console.log(missing([5, 1, 4, 2]));
+console.log(missing([1, 2, 3, 4]));
+
+
+//
+// 9. isBalanced
+console.log('9. isBalanced');
