@@ -118,6 +118,18 @@ console.log(indexOf([1, 2, 6, 7, 25, 12, 12], 12));
 // 7. isPalindrome
 console.log('7. isPalindrome');
 
+function isPalindrome (str) {
+    str = str.toLowerCase().split(' ').join('');
+    let reversedStr = str.split('').reverse().join('');
+
+    return str === reversedStr;
+}
+
+console.log(isPalindrome(''));
+console.log(isPalindrome('abcdcba'));
+console.log(isPalindrome('abcd'));
+console.log(isPalindrome('A man a plan a canal Panama'));
+
 
 //
 // 8. missing
