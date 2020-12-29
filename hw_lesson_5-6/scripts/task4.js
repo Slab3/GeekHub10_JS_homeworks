@@ -93,6 +93,7 @@ function reverse(str){
 console.log(reverse(''));
 console.log(reverse('abcdef'));
 
+
 //
 // 6. indexOf
 console.log('6. indexOf');
@@ -156,3 +157,24 @@ console.log(missing([1, 2, 3, 4]));
 //
 // 9. isBalanced
 console.log('9. isBalanced');
+
+function isBalanced(str) {
+    let openBrace = 0;
+    let closingBrace = 0;
+
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] === '{') {
+            if (closingBrace > 0) return false; // if the closing brace is open at the beginning - return false
+            openBrace++;
+        }
+        else if (str[i] === '}') closingBrace++;
+    }
+    return openBrace - closingBrace === 0;
+}
+
+console.log(isBalanced('}{'));
+console.log(isBalanced('{{}'));
+console.log(isBalanced('{}{}'));
+console.log(isBalanced('foo { bar { baz } boo }'));
+console.log(isBalanced('foo { bar { baz }'));
+console.log(isBalanced('foo { bar } }'));
