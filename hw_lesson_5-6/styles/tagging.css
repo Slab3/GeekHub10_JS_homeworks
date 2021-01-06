@@ -1,4 +1,4 @@
-.app {
+.container {
     margin: 0 auto;
     width: 512px;
 }
@@ -8,4 +8,34 @@
     background-position: center;
 
     border: 1px solid black;
+}
+
+.tag-item {
+    cursor: pointer;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgba(22, 35, 61, 0.85);
+    color: white;
+    padding: 3px 5px 3px 8px;
+    border-radius: 6px;
+    max-width: 90px;
+    min-width: 90px;
+}
+
+.first-item {
+
+}
+.second-item {
+
+}
+.third-item {
+
+}
+span {
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
 }
