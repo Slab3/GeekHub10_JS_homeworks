@@ -9,17 +9,18 @@ function matrix(R, C, r0, c0) {
     let step = 1;
 
     while (res.length < R * C) {
-        for (let index = 0; index < step; ++index) {
+        // i = index
+        for (let i = 0; i < step; ++i) {
             join(R, C, r0, c0++);
         }
-        for (let index = 0; index < step; ++index) {
+        for (let i = 0; i < step; ++i) {
             join(R, C, r0++, c0);
         }
         ++step;
-        for (let index = 0; index < step; ++index) {
+        for (let i = 0; i < step; ++i) {
             join(R, C, r0, c0--);
         }
-        for (let index = 0; index < step; ++index) {
+        for (let i = 0; i < step; ++i) {
             join(R, C, r0--, c0);
         }
         ++step;
